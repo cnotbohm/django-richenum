@@ -73,7 +73,7 @@ jobs:
         make install-dev
     - name: Pin Django version
       run: |
-        poetry run pip install "Django==${{ matrix.django-version }}"
+        poetry run pip install "Django==${{ matrix.django-version }}.*"
     - name: Lint with flake8 and pylint
       run: |
         make lint
