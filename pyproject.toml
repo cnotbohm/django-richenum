@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "django-richenum"
+name = "django-richenum-test"
 version = "5.1.0"
 description = "Django Enum library for python."
 authors = ["Hearsay Social <opensource@hearsaysocial.com>"]
