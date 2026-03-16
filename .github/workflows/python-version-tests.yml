@@ -32,7 +32,7 @@ jobs:
           django-version: "4.2"
     services:
       postgres:
-        image: postgres:12
+        image: postgres:14
         ports:
         - 5432:5432
         options: >-
