@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "django-richenum"
+version = "5.1.0"
+description = "Django Enum library for python."
+authors = ["Hearsay Social <opensource@hearsaysocial.com>"]
+license = "MIT"
+readme = ["README.md", "CHANGELOG.md"]
+homepage = "https://github.com/hearsaycorp/django-richenum"
+repository = "https://github.com/hearsaycorp/django-richenum"
+keywords = ["python", "django", "enum", "richenum"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+packages = [{ include = "django_richenum", from = "src" }]
+include = ["LICENSE.txt", "AUTHORS.md", "CHANGELOG.md"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+Django = ">=3.2,<4.3"
+richenum = "*"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-django = "*"
+flake8 = "*"
+pylint = "*"
+mysqlclient = "*"
+psycopg2-binary = "*"
+
+[build-system]
+requires = ["poetry-core>=1.1.0"]
+build-backend = "poetry.core.masonry.api"
